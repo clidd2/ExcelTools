@@ -1,3 +1,13 @@
+# ExcelTracer acts as a go-between for debugging Excel-/Spreadsheet-based models. 
+# I got VERY tired of switching between sheets looking for named cell ranges and which formulas they are referenced in. 
+#
+# End goal would be to more effectively be able to trace dependents and trace prededents. Tracking where cells are used 
+# will mitigate any blowups or #REF outs, at least it should make them significantly less likely. 
+#
+#
+#
+#######################################################################################################################
+
 import openpyxl as xl
 from openpyxl.utils import get_column_letter
 import re
